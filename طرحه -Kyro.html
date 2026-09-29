@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ai Nmpr</title>
+
+
+<style type="text/css">@font-face {font-family:'Tajawal';font-style:normal;font-weight:400;src:url(/cf-fonts/s/tajawal/5.2.7/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Tajawal';font-style:normal;font-weight:400;src:url(/cf-fonts/s/tajawal/5.2.7/arabic/400/normal.woff2);unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;font-display:swap;}@font-face {font-family:'Tajawal';font-style:normal;font-weight:500;src:url(/cf-fonts/s/tajawal/5.2.7/latin/500/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Tajawal';font-style:normal;font-weight:500;src:url(/cf-fonts/s/tajawal/5.2.7/arabic/500/normal.woff2);unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;font-display:swap;}@font-face {font-family:'Tajawal';font-style:normal;font-weight:700;src:url(/cf-fonts/s/tajawal/5.2.7/arabic/700/normal.woff2);unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;font-display:swap;}@font-face {font-family:'Tajawal';font-style:normal;font-weight:700;src:url(/cf-fonts/s/tajawal/5.2.7/latin/700/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Tajawal';font-style:normal;font-weight:900;src:url(/cf-fonts/s/tajawal/5.2.7/latin/900/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Tajawal';font-style:normal;font-weight:900;src:url(/cf-fonts/s/tajawal/5.2.7/arabic/900/normal.woff2);unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1;font-display:swap;}</style>
+<style>
+  :root {
+    --ink: #14110F;
+    --sand: #EFE8DC;
+    --clay: #A8552E;
+    --line: #D8CDB8;
+    --panel: #FBF8F2;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  body {
+    background: var(--sand);
+    color: var(--ink);
+    font-family: 'Tajawal', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 440px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 48px 36px;
+    text-align: center;
+  }
+  .mark {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 28px;
+    border: 2px solid var(--clay);
+    border-radius: 50%;
+    position: relative;
+  }
+  .mark::after {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    background: var(--clay);
+    border-radius: 50%;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 10px;
+  }
+  p.sub {
+    font-size: 15px;
+    color: #6b6355;
+    line-height: 1.7;
+    margin: 0 0 32px;
+  }
+  form { display: flex; flex-direction: column; gap: 12px; }
+  input[type="email"] {
+    width: 100%;
+    padding: 14px 16px;
+    font-family: inherit;
+    font-size: 15px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    background: #fff;
+    color: var(--ink);
+    text-align: right;
+  }
+  input[type="email"]:focus {
+    outline: 2px solid var(--clay);
+    outline-offset: 1px;
+  }
+  button {
+    padding: 14px 16px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    background: var(--clay);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+  }
+  button:hover { opacity: 0.9; }
+  button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .error {
+    font-size: 13px;
+    color: var(--clay);
+    min-height: 18px;
+    margin-top: -2px;
+  }
+  .done { display: none; }
+  .done.show { display: block; }
+  .done .mark::after { background: var(--ink); }
+  .form-wrap.hide { display: none; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="form-wrap" id="formWrap">
+    <div class="mark"></div>
+    <h1>Ai</h1>
+    <p class="sub">سجّل الدخول بجوجل, واستمتع في الAi</p>
+    <div id="g_id_signin" style="display:flex; justify-content:center;"></div>
+    <div class="error" id="errorMsg"></div>
+  </div>
+
+  <div class="done" id="doneWrap">
+    <div class="mark"></div>
+    <h1 id="welcomeMsg">تم التسجيل</h1>
+    <p class="sub" style="margin-bottom:0;">قريباً بنراسلك على بريدك</p>
+  </div>
+</div>
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script>
+  const GOOGLE_CLIENT_ID = "662212705160-21e57ar174ra1dlug3m77tq7h5j94mkg.apps.googleusercontent.com";
+
+  function detectDevice() {
+    const ua = navigator.userAgent;
+    let device = "غير معروف";
+    if (/iPhone/i.test(ua)) device = "iPhone";
+    else if (/iPad/i.test(ua)) device = "iPad";
+    else if (/Android/i.test(ua)) device = "Android";
+    else if (/Macintosh/i.test(ua)) device = "Mac";
+    else if (/Windows/i.test(ua)) device = "Windows";
+    else if (/Linux/i.test(ua)) device = "Linux";
+    return { device, userAgent: ua, platform: navigator.platform || "غير متاح" };
+  }
+
+  console.log("مدعوس جديدد:", detectDevice());
+
+  function decodeJwt(token) {
+    const payload = token.split('.')[1];
+    const decoded = decodeURIComponent(
+      atob(payload.replace(/-/g, '+').replace(/_/g, '/'))
+        .split('')
+        .map(c => '%' + c.charCodeAt(0).toString(16).padStart(2, '0'))
+        .join('')
+    );
+    return JSON.parse(decoded);
+  }
+
+  function handleGoogleSignIn(response) {
+    const user = decodeJwt(response.credential);
+    const info = detectDevice();
+
+    console.log("تسجيل دخول جديد:", {
+      email: user.email,
+      first_name: user.given_name,
+      last_name: user.family_name,
+      full_name: user.name,
+      picture: user.picture,
+      device: info.device,
+      userAgent: info.userAgent,
+      platform: info.platform,
+      time: new Date().toLocaleString('ar-SA')
+    });
+
+    document.getElementById('welcomeMsg').textContent = "أهلاً " + (user.given_name || user.name);
+    document.getElementById('formWrap').classList.add('hide');
+    document.getElementById('doneWrap').classList.add('show');
+  }
+
+  window.onload = function () {
+    if (typeof google === 'undefined') {
+      document.getElementById('errorMsg').textContent = "تعذر تحميل خدمة تسجيل الدخول";
+      return;
+    }
+    google.accounts.id.initialize({
+      client_id: GOOGLE_CLIENT_ID,
+      callback: handleGoogleSignIn
+    });
+    google.accounts.id.renderButton(
+      document.getElementById('g_id_signin'),
+      { theme: 'outline', size: 'large', shape: 'pill', locale: 'ar' }
+    );
+  };
+</script>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"a3a7c5d0bbae400096ba173e48f04ab7","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
